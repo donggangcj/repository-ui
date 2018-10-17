@@ -1,7 +1,8 @@
 // import React from 'react';
 import REST from './rest';
 
-const API_URL = 'http://117.50.19.70:30088';
+const API_URL = 'http://192.168.5.82:31296';
+//const API_URL = process.env.API_URL;
 
 class APIService extends REST {
   constructor() {
