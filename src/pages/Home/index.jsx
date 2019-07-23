@@ -5,7 +5,7 @@ import Header from '@/components/Header/index';
 import { Table, Button, DatePicker, Form, Select } from 'antd';
 import './style.less';
 import moment from 'moment';
-import { cities, keywords }  from './config';
+import { cities, keywords }  from './config'; // 地区，关键字
 
 const FormItem = Form.Item;
 const { RangePicker} = DatePicker;
@@ -138,9 +138,10 @@ class Home extends React.Component {
 	}
 
 	render() {
+		// table 字段
 		const columns = [
 			{
-				title: '省市',
+				title: '来源',
 				dataIndex: 'area',
 				key: 'area',
 				filterMultiple: false,
@@ -182,7 +183,10 @@ class Home extends React.Component {
 		];
 
 		const { getFieldDecorator } = this.props.form;
+		// console.log('a', this.props.form)
+		// 地区
 		const cityOptions = this.state.cities.map(city => <Option key={city.key} value={city.value}>{city.text}</Option>);
+		// 关键字
 		const keywordOptions = keywords.map(word => <Option key={word.key} value={word.value}>{word.text}</Option>);
 		return (
 			<div>
@@ -196,7 +200,7 @@ class Home extends React.Component {
 										showSearch
 										optionFilterProp="children"
 										mode="multiple"
-										placeholder="请选择地区"
+										placeholder="请选择来源"
 										style={{ width: 300 }}>
 										{cityOptions}
 									</Select>

@@ -1,3 +1,4 @@
+// 地区关键字
 const cities = [
 	/*
 	{
@@ -35,6 +36,11 @@ const cities = [
 		key: 'zhejiang'
 	},
 	{
+		text: '山东',
+		value: 'shandong',
+		key: 'shandong'
+	},
+	{
 		text: '工业互联网产业联盟',
 		value: 'chanyelianmeng',
 		key: 'chanyelianmeng'
@@ -45,24 +51,24 @@ const cities = [
 		key: 'gongxinbu'
 	},
 	{
+		text: '物联网世界',
+		value: 'netofthings',
+		key: 'netofthings'
+	},
+	{
 		text: '搜狐',
 		value: 'souhu',
 		key: 'souhu'
 	},
 	{
-		text: '山东',
-		value: 'shandong',
-		key: 'shandong'
+		text: '造奇智能',
+		value: 'zaoqizhineng',
+		key: 'zaoqizhineng'
 	},
 	{
 		text: '活动家',
 		value: 'huodongjia',
 		key: 'huodongjia'
-	},
-	{
-		text: '造奇智能',
-		value: 'zaoqizhineng',
-		key: 'zaoqizhineng'
 	},
 	{
 		text: '活动行',
@@ -176,6 +182,7 @@ const cities = [
 	},*/
 ]
 
+// 关键字
 const keywords = [
 	{
 		text: '工业App',
@@ -191,6 +198,26 @@ const keywords = [
 		text: '工业互联网活动',
 		value: '工业互联网活动',
 		key: 'hulianwanghuodong'
+	},
+	{
+		text: '工业物联网',
+		value: '工业物联网',
+		key: 'industryInternet'
+	},
+	{
+		text: '工业4.0',
+		value: '工业4.0',
+		key: 'industry4.0'
+	},
+	{
+		text: '智慧工厂',
+		value: '智慧工厂',
+		key: 'smartfactory'
+	},
+	{
+		text: '智慧制造2025',
+		value: '智慧制造2025',
+		key: 'smartmanufacturing'
 	},
 	{
 		text: '竞品-航天云网',
