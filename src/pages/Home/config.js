@@ -42,8 +42,8 @@ const cities = [
 	},
 	{
 		text: '工业互联网产业联盟',
-		value: 'chanyelianmeng',
-		key: 'chanyelianmeng'
+		value: 'aii-alliance',
+		key: 'aii-alliance'
 	},
 	{
 		text: '工信部',
